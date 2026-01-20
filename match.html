@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Match</title>
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="navBar">
+
+            <div class="logoGauche">
+            <img src="logo.png" alt="">
+            </div>
+
+        <nav>
+            <a class="lienNavBar" href="index.html">Accueil</a>
+            <a class="lienNavBar" href="catalogue.html">Catalogue</a>
+            <a class="lienNavBar" href="#">Match !</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+    <h1>🎬 Choisissez vos films ensemble</h1>
+
+    <!-- TINDER SECTION -->
+     <section>
+    <div id="sectionTinder">
+        <h2 id="userBanner">Utilisateur A</h2>
+        <div id="movieContainer">
+            <div class="movie-card">
+                <img id="moviePoster" src="" alt="">
+                <h3 id="movieTitle"></h3>
+                <p id="movieDescription"></p>
+
+                <div class="buttons">
+                    <button class="btn btn-like" onclick="vote(true)">👍 J’aime</button>
+                    <button class="btn btn-dislike" onclick="vote(false)">👎 Non</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </section>
+    <div id="toast" class="toast"></div>
+
+
+    <!-- MATCH SECTION -->
+    <section id="sectionMatch" class="hidden">
+        <h2>🎯 Vos films en commun</h2>
+        <div id="matches"></div>
+    </section>
+    
+    </main>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/match.js"></script>
+</body>
+</html>
