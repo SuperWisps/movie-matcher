@@ -117,7 +117,7 @@ main {
     padding-top: 100px;
 }
 
-#mainCatalogue {
+.mainCatalogue {
     padding-top: 100px;
     display: flex;
     justify-content: center;
@@ -209,7 +209,7 @@ h1 {
 }
 /*  ------- CATALOGUE -------- */
 
-#catalogue {
+.catalogue {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 25px;
@@ -237,6 +237,10 @@ h1 {
   background: #444;
   border-radius: 5px;
   font-size: 12px;
+}
+
+.category:hover{
+    cursor: pointer;
 }
 
 /* ------- STYLE MATCH ----- */

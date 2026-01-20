@@ -57,8 +57,10 @@ function showMovie() {
 // Vote "like / dislike"
 // ----------------------------
 function vote(liked) {
-    if (currentUser === "A") votesA[currentIndex] = liked;
-    else votesB[currentIndex] = liked;
+    const movie = movies[currentIndex];
+    if (currentUser === "A") votesA[movie.id] = liked;
+    else votesB[movie.id] = liked;
+
 
     currentIndex++;
     showMovie();
