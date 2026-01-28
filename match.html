@@ -1,62 +1,50 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Match</title>
-    <link href="assets/css/style.css" rel="stylesheet">
-</head>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Match</title>
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <script src="assets/scripts/data.js" defer></script>
+        <script src="assets/scripts/match.js" defer></script>
+    </head>
 
-<body>
+    <body>
+        <header class="nav">
+            <nav>
+                <a class="lienNav" href="index.html">Accueil</a>
+                <a class="lienNav" href="catalogue.html">Catalogue</a>
+                <a class="lienNav" href="#">Let's Match !</a>
+            </nav>
+        </header>
 
-    <header class="navBar">
-
-            <div class="logoGauche">
-            <img src="logo.png" alt="">
-            </div>
-
-        <nav>
-            <a class="lienNavBar" href="index.html">Accueil</a>
-            <a class="lienNavBar" href="catalogue.html">Catalogue</a>
-            <a class="lienNavBar" href="#">Match !</a>
-        </nav>
-
-    </header>
-
-
-    <main>
-    <h1>Qu'est ce qu'on regarde ce soir ?🎬</h1>
-
-    <!-- TINDER SECTION -->
-     <section>
-    <div id="sectionTinder">
-        <h2 id="userBanner">Utilisateur A</h2>
-        <div id="movieContainer">
-            <div class="movie-card">
-                <img id="moviePoster" src="" alt="">
-                <h3 id="movieTitle"></h3>
-                <p id="movieDescription"></p>
-
-                <div class="buttons">
-                    <button class="btn btn-like" onclick="vote(true)">👍 J’aime</button>
-                    <button class="btn btn-dislike" onclick="vote(false)">👎 Non</button>
+        <main>
+            <h1>Qu'est ce qu'on regarde ce soir ?🎬</h1>
+            <section>
+                <div id="sectionTinder">
+                    <h2 id="userBanner">Utilisateur A</h2>
+                    <div id="movieContainer">
+                        <div class="movieCard">
+                            <img id="moviePoster" src="" alt="">
+                            <h3 id="movieTitle"></h3>
+                            <p id="movieDescription"></p>
+                            <div class="buttons">
+                                <button class="btn btn-like" onclick="vote(true)">👍 Oui</button>
+                                <button class="btn btn-dislike" onclick="vote(false)">👎 Non</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-
-    </div>
-    </section>
-    <div id="toast" class="toast"></div>
+            </section>
+            <div id="toast" class="toast"></div>
 
 
-    <!-- MATCH SECTION -->
-    <section id="sectionMatch" class="hidden">
-        <h2>🎯 Vos films en commun</h2>
-        <div id="matches"></div>
-    </section>
-    
-    </main>
-
-    <script src="assets/js/data.js"></script>
-    <script src="assets/js/match.js"></script>
-</body>
+            <section id="sectionMatch" class="hidden">
+                <h2>🎯 Vos films en commun</h2>
+                <div id="matches"></div>
+            </section>
+        </main>
+    </body>
 </html>

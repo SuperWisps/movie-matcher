@@ -1,78 +1,74 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Accueil</title>
-    <link href="assets/css/style.css" rel="stylesheet">
+    <head>
+        <meta charset="utf-8">
+        <title>Accueil</title>
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&display=swap" rel="stylesheet">
+    </head>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&display=swap" rel="stylesheet">
-</head>
+    <body>
+        <header class="nav">
+            <nav>
+                <a class="lienNav" href="#">Accueil</a>
+                <a class="lienNav" href="catalogue.html">Catalogue</a>
+                <a class="lienNav" href="match.html">Let's Match !</a>
+            </nav>
+        </header>
 
-<body>
-    <header class="navBar">
-
-    <div class="logoGauche">
-        <img src="logo.png" alt="">
-    </div>
-
-    <nav>
-        <a class="lienNavBar" href="#">Accueil</a>
-        <a class="lienNavBar" href="catalogue.html">Catalogue</a>
-        <a class="lienNavBar" href="match.html">Match !</a>
-    </nav>
-
-</header>
-
-    <main>
-
-        <section id="dernierAjout">
-            <h1>Dernier Film Ajouté</h1>
-
-            <div class="gridFilm">
-                <div class="filmItem affiche">
-                    <img src="assets/img/zootopia.jpg" alt="Zootopie">
-                </div>
-
-                <div class="filmItem titre">
-                    <h2>Zootopie</h2>
-                </div>
-
-                <div class="filmItem info">
-                    <p>
-                        Salut, moi c'est Nick Wilde.<br>
-                        Laisse moi te raconter comment une lapine à ruiné ma carrière d'arnaqueur...<br>
-                        Tout commence le jour où Judy Hopps, un lapin avec une foi absolue dans le système, débarque dans ma vie. Elle veut être flic, sérieusement... <br>
-                        Moi J'y crois autant qu'à un renard végétarien.<br>
-                        A Zootopie, les lapins font des bébés, les lions dirigent la ville, et les renards comme moi sont louches par défaut. Donc j'ai optimisé le truc, arnaquer intelligemment. C'est du pragmatisme.<br>
-                        Mais voila que Judy me force à l'aider sur une enquête chelou: Des animaux deviennent sauvages.
+        <main>
+            <section id="sectionPre">
+                <div id="presentation">
+                <h1 id="titrePre">Bienvenue sur Movie Matcher !</h1>
+                    <p id="preP1">Parcequ'à deux, choisir un film devient un rituel sacré, une quête spirituelle<br>
+                    Bref: Bien trop sérieux !
                     </p>
-                </div>
-            </div>
-        </section>
+                    <img src="assets/img/imgp1.png" id="img1" alt="tired">
 
-        <section id="choixSemaine">
-            <h1>Film de la semaine</h1>
-
-            <div class="gridFilm">
-                <div class="filmItem affiche">
-                    <img src="assets/img/cloud atlas.jpg" alt="Cloud Atlas">
-                </div>
-
-                <div class="filmItem titre">
-                    <h2>Cloud Atlas</h2>
-                </div>
-
-                <div class="filmItem info">
-                    <p>
-                        Je m’appelle Tom Hanks. D’habitude, quand je joue dans un film, les gens savent à peu près où ils mettent les pieds. Il y a un début, un milieu, une fin, et je représente généralement une forme de stabilité morale. Dans Cloud Atlas, on m’a juste dit que j’allais jouer plusieurs personnages à travers différentes époques. On n’a pas précisé lesquelles. Ni pourquoi. Ni combien de fois j’allais regretter d’avoir signé.<br>
-                            À la fin — enfin, s’il y a une fin — je ne saurais pas dire qui j’étais vraiment censé être. Un héros, un avertissement, un simple passage. Cloud Atlas, c’est un film qui te donne le sentiment que ta vie fait partie de quelque chose de plus grand, même si tu n’as aucune idée de quoi il s’agit.
+                    <p id="preP2"><strong>Let's Match</strong><br>
+                    Vous swipez<br>
+                    Sans discours<br>
+                    Sans drame<br>
+                    Et magie ! Un compromis apparaît.
                     </p>
-                </div>
-            </div>
-        </section>
+                    <img src="assets/img/imgp2.png" id="img2" alt="magic">
+                    
+                    <p id="preP3">Moins noble qu'un débat<br>
+                    Mais tellement plus efficace.
+                    </p>
+                    <img src="assets/img/imgp3.png" id="img3" alt="great">
 
-    </main>
-</body>
+                </div>
+            </section>
+
+            <section id="sectionTuto">
+                <div id="tuto">
+                    <h1>Comment ça marche ?</h1>
+                    <p>Vous pouvez explorez les films disponibles dans la page <br>
+                    <a class="lienNav" href="catalogue.html">Catalogue</a>
+                    </p>
+                    <p>Vous pouvez ensuite confrontez vos envies avec<br>
+                    <a class="lienNav" href="match.html">Let's Match !</a>
+                    </p>
+                    <p>Pour le moment, seulement <strong>deux</strong> utilisateurs sur le même appareil<br>
+                    Vous faites vos choix l'un après l'autre</p>
+                </div>
+            </section>
+
+            <section id="creationCompte">
+                <h1>Formulaire de création de compte</h1>
+                <form>
+                    <!--<label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" placeholder="Votre Nom" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Votre Email" required>
+                    -->
+
+                </form>
+            </section>
+        </main>
+    </body>
 </html>
